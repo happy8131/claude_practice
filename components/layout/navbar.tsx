@@ -8,6 +8,7 @@ import type { NavLink } from "@/types";
 const navLinks: NavLink[] = [
   { label: "홈", href: "/" },
   { label: "기능", href: "#features" },
+  { label: "예제", href: "/examples" },
   { label: "문서", href: "#docs" },
   { label: "연락처", href: "#contact" },
 ];

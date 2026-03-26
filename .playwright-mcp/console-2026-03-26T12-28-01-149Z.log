@@ -1,0 +1,82 @@
+[   12459ms] [ERROR] ./app/examples/page.tsx:2:1
+Export Button doesn't exist in target module
+  1 | import Link from "next/link";
+> 2 | import { Button as ButtonIcon, FileText, LayoutGrid } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function ExamplesPage() {
+  5 |   const examples = [
+
+The export Button was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-rsc] (ecmascript).
+Did you mean to import NutIcon?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[   13555ms] [ERROR] ./app/examples/page.tsx:2:1
+Export Button doesn't exist in target module
+  1 | import Link from "next/link";
+> 2 | import { Button as ButtonIcon, FileText, LayoutGrid } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function ExamplesPage() {
+  5 |   const examples = [
+
+The export Button was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-rsc] (ecmascript).
+Did you mean to import NutIcon?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[   15041ms] [ERROR] ./app/examples/page.tsx:2:1
+Export Button doesn't exist in target module
+  1 | import Link from "next/link";
+> 2 | import { Button as ButtonIcon, FileText, LayoutGrid } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function ExamplesPage() {
+  5 |   const examples = [
+
+The export Button was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-rsc] (ecmascript).
+Did you mean to import NutIcon?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3272
+[   15301ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/examples?_rsc=lquux:0
+[   15377ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/examples:0
+[   15902ms] Error: ./app/examples/page.tsx:2:1
+Export Button doesn't exist in target module
+  1 | import Link from "next/link";
+> 2 | import { Button as ButtonIcon, FileText, LayoutGrid } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function ExamplesPage() {
+  5 |   const examples = [
+
+The export Button was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-rsc] (ecmascript).
+Did you mean to import NutIcon?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/examples/page.tsx:2:1)
+    at Object.getCompilationErrors (file://C:\Users\user\workspaces\courses\scraping-test\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1189:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\user\workspaces\courses\scraping-test\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\user\workspaces\courses\scraping-test\node_modules\next\dist\server\dev\next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file://C:\Users\user\workspaces\courses\scraping-test\node_modules\next\dist\server\dev\next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\user\workspaces\courses\scraping-test\node_modules\next\dist\server\base-server.js:1745:26)
+[   15911ms] [ERROR] ./app/examples/page.tsx:2:1
+Export Button doesn't exist in target module
+  1 | import Link from "next/link";
+> 2 | import { Button as ButtonIcon, FileText, LayoutGrid } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function ExamplesPage() {
+  5 |   const examples = [
+
+The export Button was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-rsc] (ecmascript).
+Did you mean to import NutIcon?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[   16082ms] [ERROR] ./app/examples/page.tsx:2:1
+Export Button doesn't exist in target module
+  1 | import Link from "next/link";
+> 2 | import { Button as ButtonIcon, FileText, LayoutGrid } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function ExamplesPage() {
+  5 |   const examples = [
+
+The export Button was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-rsc] (ecmascript).
+Did you mean to import NutIcon?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
