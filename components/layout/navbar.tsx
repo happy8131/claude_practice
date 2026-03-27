@@ -15,7 +15,7 @@ const navLinks: NavLink[] = [
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* 로고 */}
@@ -29,7 +29,7 @@ export default function Navbar() {
 
           {/* 데스크탑 네비게이션 */}
           <div className="hidden md:flex items-center gap-8">
-            <nav className="flex gap-6">
+            <nav aria-label="주요 내비게이션" className="flex gap-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -49,6 +49,6 @@ export default function Navbar() {
           <MobileMenu links={navLinks} />
         </div>
       </div>
-    </nav>
+    </header>
   );
 }

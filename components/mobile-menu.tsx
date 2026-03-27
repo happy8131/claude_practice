@@ -29,6 +29,17 @@ export default function MobileMenu({ links }: MobileMenuProps) {
     }
   }, [isOpen]);
 
+  // ESC 키로 메뉴 닫기
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    if (isOpen) {
+      document.addEventListener("keydown", handleEsc);
+      return () => document.removeEventListener("keydown", handleEsc);
+    }
+  }, [isOpen]);
+
   return (
     <div className="md:hidden" ref={menuRef}>
       <Button
@@ -36,7 +47,7 @@ export default function MobileMenu({ links }: MobileMenuProps) {
         size="icon"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
-        aria-label="메뉴 열기"
+        aria-label={isOpen ? "메뉴 닫기" : "메뉴 열기"}
         className="relative z-40"
       >
         {isOpen ? (

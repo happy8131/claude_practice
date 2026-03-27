@@ -28,7 +28,7 @@ export default function CTASection() {
               className="gap-2"
               asChild
             >
-              <Link href="https://github.com" target="_blank">
+              <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
                 GitHub에서 보기
                 <ArrowRight className="h-4 w-4" />
               </Link>

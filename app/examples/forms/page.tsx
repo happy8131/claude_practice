@@ -24,30 +24,33 @@ export default function FormsExamplePage() {
           <h2 className="text-2xl font-semibold text-foreground mb-6">입력 필드</h2>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">
+              <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                 이름
               </label>
               <input
+                id="name"
                 type="text"
                 placeholder="이름을 입력하세요"
                 className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                 이메일
               </label>
               <input
+                id="email"
                 type="email"
                 placeholder="이메일을 입력하세요"
                 className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">
+              <label htmlFor="password" className="block text-sm font-medium text-foreground mb-2">
                 비밀번호
               </label>
               <input
+                id="password"
                 type="password"
                 placeholder="비밀번호를 입력하세요"
                 className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
@@ -62,10 +65,11 @@ export default function FormsExamplePage() {
             텍스트 영역
           </h2>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-2">
+            <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
               메시지
             </label>
             <textarea
+              id="message"
               placeholder="메시지를 입력하세요"
               rows={4}
               className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
@@ -143,12 +147,17 @@ export default function FormsExamplePage() {
           <h2 className="text-2xl font-semibold text-foreground mb-6">
             셀렉트 드롭다운
           </h2>
-          <select className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-            <option value="">선택하세요</option>
-            <option value="option1">옵션 1</option>
-            <option value="option2">옵션 2</option>
-            <option value="option3">옵션 3</option>
-          </select>
+          <div>
+            <label htmlFor="select-option" className="block text-sm font-medium text-foreground mb-2">
+              옵션 선택
+            </label>
+            <select id="select-option" className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+              <option value="">선택하세요</option>
+              <option value="option1">옵션 1</option>
+              <option value="option2">옵션 2</option>
+              <option value="option3">옵션 3</option>
+            </select>
+          </div>
         </section>
 
         {/* 코드 예제 */}

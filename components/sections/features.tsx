@@ -10,52 +10,42 @@ import type { Feature } from "@/types";
 
 const features: Feature[] = [
   {
-    icon: "Zap",
+    icon: Zap,
     title: "번개 같은 속도",
     description:
       "Next.js 16의 최신 성능 최적화로 빠른 페이지 로드와 부드러운 사용자 경험을 제공합니다.",
   },
   {
-    icon: "Palette",
+    icon: Palette,
     title: "다크모드 지원",
     description:
       "내장된 다크모드 시스템으로 라이트/다크 테마를 자유롭게 전환할 수 있습니다.",
   },
   {
-    icon: "Code2",
+    icon: Code2,
     title: "TypeScript",
     description:
       "타입 안전성으로 버그를 조기에 발견하고 더 나은 개발 경험을 누리세요.",
   },
   {
-    icon: "Smartphone",
+    icon: Smartphone,
     title: "반응형 디자인",
     description:
       "모바일부터 데스크탑까지 모든 기기에서 완벽하게 작동하는 디자인입니다.",
   },
   {
-    icon: "Shield",
+    icon: Shield,
     title: "보안 최우선",
     description:
       "OWASP 가이드라인을 따른 보안 모범 사례가 이미 적용되어 있습니다.",
   },
   {
-    icon: "Rocket",
+    icon: Rocket,
     title: "프로덕션 준비 완료",
     description:
       "배포 최적화, 성능 모니터링, 에러 추적이 모두 설정되어 있습니다.",
   },
 ];
-
-// 아이콘 맵
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  Zap,
-  Palette,
-  Code2,
-  Smartphone,
-  Shield,
-  Rocket,
-};
 
 export default function FeaturesSection() {
   return (
@@ -77,7 +67,7 @@ export default function FeaturesSection() {
         {/* 기능 그리드 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature) => {
-            const IconComponent = iconMap[feature.icon];
+            const IconComponent = feature.icon;
             return (
               <div
                 key={feature.title}

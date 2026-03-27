@@ -7,7 +7,7 @@ export interface NavLink {
 
 // 기능 소개 카드 타입
 export interface Feature {
-  icon: string; // lucide-react 아이콘 이름
+  icon: React.ComponentType<{ className?: string }>;
   title: string;
   description: string;
 }
